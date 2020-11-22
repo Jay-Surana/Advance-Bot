@@ -1,6 +1,6 @@
 # Advance-Bot
 - 💻This is made for some stuff everyone wants in their bot.
-- 😩I made it in a single file cause many people can get what it is.'
+- 😩I made it in a single file cause many people can get what it is.
 - 🤝Feel free to fork it and send pull requests
 - ⭕Please follow [me](https://github.com/Jay-Surana) if you found this helpful.
 - 📑For support join the [discord server](https://discord.gg/invite/qAs3Zr2cnU)
