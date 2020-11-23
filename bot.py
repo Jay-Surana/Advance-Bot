@@ -36,7 +36,7 @@ async def on_member_join(member):
     guild: discord.Guild = member.guild
     channels = guild.channels
     
-    wel_channel = bot.guild.get_channel('id here') #example - bot.guild.get_channel(733224387263856681) 
+    wel_channel = guild.get_channel('id here') #example - bot.guild.get_channel(733224387263856681) 
     #for none type wel_channel=None
     wlcm_msg = f'Hi {member.mention}' #this is just a example you can change it. 
                                              #if u want to print something on new like use \n 
@@ -52,7 +52,7 @@ async def on_member_remove(member):
     guild = member.guild
     channels = guild.channels
     
-    leave_channel = bot.guild.get_channel('channel id here') #example - bot.guild.get_channel(733224387263856681) 
+    leave_channel = guild.get_channel('channel id here') #example - bot.guild.get_channel(733224387263856681) 
     #for none type leave_channel=None
     leave_msg = f"{member} left ....."
 
