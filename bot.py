@@ -25,10 +25,6 @@ bot = commands.Bot(command_prefix =PREFIX,
                    help_command=None,
                    case_insensitive=True)
 
-wel_channel = bot.guild.get_channel('id here') #example - bot.guild.get_channel(733224387263856681) 
-#for none type wel_channel=None
-leave_channel = bot.guild.get_channel('channel id here') #example - bot.guild.get_channel(733224387263856681) 
-#for none type leave_channel=None
 
 @bot.event
 async def on_ready():
@@ -39,7 +35,9 @@ async def on_ready():
 async def on_member_join(member):
     guild: discord.Guild = member.guild
     channels = guild.channels
-
+    
+    wel_channel = bot.guild.get_channel('id here') #example - bot.guild.get_channel(733224387263856681) 
+    #for none type wel_channel=None
     wlcm_msg = f'Hi {member.mention}' #this is just a example you can change it. 
                                              #if u want to print something on new like use \n 
                                              #if u want to mention a channel use <#channel id>
@@ -53,7 +51,9 @@ async def on_member_join(member):
 async def on_member_remove(member):
     guild = member.guild
     channels = guild.channels
-
+    
+    leave_channel = bot.guild.get_channel('channel id here') #example - bot.guild.get_channel(733224387263856681) 
+    #for none type leave_channel=None
     leave_msg = f"{member} left ....."
 
     #sending message
@@ -93,7 +93,7 @@ async def hello(ctx):
 @bot.command()
 async def ping(ctx):
     ping = round(bot.latency * 1000)
-    ctx.send(f'🏓Pong `{ping}ms`')
+    await ctx.send(f'🏓Pong `{ping}ms`')
 
 @bot.command(name="clear")
 @commands.has_guild_permissions(manage_messages=True)
