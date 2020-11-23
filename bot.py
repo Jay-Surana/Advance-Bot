@@ -79,8 +79,7 @@ async def help(ctx):
     description =  "**Member Commands**" "\n" "`help`, `hello`" "\n" "`ping`, `support`, `userinfo`," "\n" "`serverinfo`" "\n"
     "**Mod Command**" "\n" "`kick`, `ban`," "\n" "`unban`, `addrole`," "\n" "`removerole`, `mute`," "\n" "`unmute`, `clear`," "\n"
     "`warn`, `warncount`" "\n"
-    "**Management Command**" "\n" "`lockchannel`, `unlockchannel`," "\n" "`say`, `nuke`,"  "\n" "`announce`, `poll`," "\n" 
-    "`lock`, `unlock`",
+    "**Management Command**" "\n" "`lockchannel`, `unlockchannel`," "\n" "`say`, `nuke`,"  "\n" "`announce`, `poll`,",
     colour = discord.Colour.red()
     )
     await ctx.send(f"**Hello {ctx.author.mention} Check Your DM**", delete_after = 5)
